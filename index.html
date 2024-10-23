@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme = "light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,8 +9,107 @@
 <!--    custom tailwind file  -->
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.13/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!-- custom cdn of font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 <body>
+    <main class=" bg-[#1e1e1e] min-h-screen bg-[url('images/background.png')] bg-no-repeat bg-center">
+                            <!-- home start here -->
+        <section id="homeSection" class="home text-white flex justify-center min-h-screen">
+
+<div class="flex flex-col justify-center items-center gap-5">
+    <h1 class="font-family: Anton;
+text-8xl uppercase">ALPHABET CLASH</h1>
+<p>Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
+<button onclick="playNow()" class="border-none btn bg-white text-black">Play Now</button>
+</div>
+        </section>
+
+        <!-- home ends here -->
+
+
+        <!-- play ground start here -->
     
+        <section id="playgroundSection" class="playground hidden">
+    
+            <!-- artbord -->
+
+           <div class="flex justify-center">
+            <div class="mt-28 mb-4 artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3]">
+
+              <div class="flex justify-center">
+                <p class="bg-[#010313CC] rounded-b-xl px-6 pb-4 text-white">Don't watch screen while Playing</p>
+              </div>
+              
+                <p id="currentAlpha" class="mt-14 text-8xl text-center text-black text-bold">Y</p>
+              
+            </div>
+
+           </div>
+
+            <!-- artbord -->
+
+  <!-- keyborad -->
+
+  <div class="my-1 flex w-full justify-center gap-1">
+    <kbd id="q" class="kbd">q</kbd>
+    <kbd id="w" class="kbd">w</kbd>
+    <kbd id="e" class="kbd">e</kbd>
+    <kbd id="r" class="kbd">r</kbd>
+    <kbd id="t" class="kbd">t</kbd>
+    <kbd id="y" class="kbd">y</kbd>
+    <kbd id="u" class="kbd">u</kbd>
+    <kbd id="i" class="kbd">i</kbd>
+    <kbd id="o" class="kbd">o</kbd>
+    <kbd id="p" class="kbd">p</kbd>
+  </div>
+  <div class="my-1 flex w-full justify-center gap-1">
+    <kbd id="a" class="kbd">a</kbd>
+    <kbd id="s" class="kbd">s</kbd>
+    <kbd id="d" class="kbd">d</kbd>
+    <kbd id="f" class="kbd">f</kbd>
+    <kbd id="g" class="kbd">g</kbd>
+    <kbd id="h" class="kbd">h</kbd>
+    <kbd id="j" class="kbd">j</kbd>
+    <kbd id="k" class="kbd">k</kbd>
+    <kbd id="l" class="kbd">l</kbd>
+  </div>
+  <div class="my-1 flex w-full justify-center gap-1">
+    <kbd id="z" class="kbd">z</kbd>
+    <kbd id="x" class="kbd">x</kbd>
+    <kbd id="c" class="kbd">c</kbd>
+    <kbd id="v" class="kbd">v</kbd>
+    <kbd id="b" class="kbd">b</kbd>
+    <kbd id="n" class="kbd">n</kbd>
+    <kbd id="m" class="kbd">m</kbd>
+    <kbd id="/" class="kbd">/</kbd>
+  </div>
+
+  <!-- keyboard -->
+
+  <div class="flex w-[1024px] justify-between mt-0 mb-0 ml-auto mr-auto">
+    <div>
+      <button class="border-none rounded-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-40 h-14 bg-[#894189] text-white">Life <i class="fa-solid fa-heart"></i> <span>1</span></button>
+    </div>
+    <div>
+      <button class="border-none rounded-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-40 h-14 bg-[#360490] text-white">Score <i class="fa-solid fa-sack-dollar"></i> <span>1</span></button>
+    </div>
+  </div>
+
+        </section>
+
+        <!-- play ground ends here -->
+    
+        <section class="score flex justify-center items-center min-h-screen hidden">
+          <div class="p-8 w-[396px] h-[282px] bg-gradient-to-r from-violet-500 to-fuchsia-500 text-center text-white rounded-xl">
+             <h1 class="text-7xl uppercase">Score:14</h1>
+             <button class="m-4 border-none btn bg-white text-black">Play Now</button>
+             <p class="text-2xl">Practice Will Make You Pro</p>
+          </div>
+        </section>
+
+    </main>
+<script src="./js file/alphabet.js"></script>
 </body>
 </html>

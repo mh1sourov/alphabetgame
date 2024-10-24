@@ -90,10 +90,10 @@ text-8xl uppercase">ALPHABET CLASH</h1>
 
   <div class="flex w-[1024px] justify-between mt-0 mb-0 ml-auto mr-auto">
     <div>
-      <button class="border-none rounded-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-40 h-14 bg-[#894189] text-white">Life <i class="fa-solid fa-heart"></i> <span>1</span></button>
+      <button class="border-none rounded-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-40 h-14 bg-[#894189] text-white">Life <i class="fa-solid fa-heart"></i> <span id="life">5</span></button>
     </div>
     <div>
-      <button class="border-none rounded-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-40 h-14 bg-[#360490] text-white">Score <i class="fa-solid fa-sack-dollar"></i> <span>1</span></button>
+      <button class="border-none rounded-full btn btn-xs sm:btn-sm md:btn-md lg:btn-lg w-40 h-14 bg-[#360490] text-white">Score <i class="fa-solid fa-sack-dollar"></i> <span id="scorCount">1</span></button>
     </div>
   </div>
 
@@ -101,10 +101,10 @@ text-8xl uppercase">ALPHABET CLASH</h1>
 
         <!-- play ground ends here -->
     
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <section id="scoreBoard" class="score flex justify-center items-center min-h-screen hidden">
           <div class="p-8 w-[396px] h-[282px] bg-gradient-to-r from-violet-500 to-fuchsia-500 text-center text-white rounded-xl">
-             <h1 class="text-7xl uppercase">Score:14</h1>
-             <button class="m-4 border-none btn bg-white text-black">Play Now</button>
+             <h1 class="text-7xl uppercase">Score:<span id="finalScore"></span></h1>
+             <button id="playAgainBtn" class="m-4 border-none btn bg-white text-black">Play Again</button>
              <p class="text-2xl">Practice Will Make You Pro</p>
           </div>
         </section>
